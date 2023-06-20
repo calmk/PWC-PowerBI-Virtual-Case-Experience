@@ -6,7 +6,7 @@
 
 
 ## Table of contents
-- [Problem Statement](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/6a2426abd9dfd754f8ac04a33ea35e7f4aa7e9f8/Task%202#Problem-Statement)
+- [Problem Statement](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Problem-Statement)
 - [Data Sourcing](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Sourcing)
 - [Data Preparation](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Preparation)
 - [Data Modeling](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Modeling)
