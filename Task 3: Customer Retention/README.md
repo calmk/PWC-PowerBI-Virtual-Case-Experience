@@ -86,7 +86,7 @@ A new table named `Churn unpivot` was created by duplicating the `Churn datas
     - `Table.ReplaceValue(#"Renamed Columns","No internet service","No",Replacer.ReplaceText,{"OnlineSecurity", "OnlineBackup", "DeviceProtection", "TechSupport", "StreamingTV", "StreamingMovies"})`
     - `Table.Unpivot(#"Reordered Columns", {"PhoneService", "MultipleLines", "Internet", "OnlineSecurity", "OnlineBackup", "DeviceProtection", "TechSupport", "StreamingTV", "StreamingMovies"}, "Attribute", "Value.1")`
 
-Besides that, I run Python Scripting in PowerQuery to conduct predictive analysis throughout three more tables named `Model Evaluation`, `Weight`, `Probability`. You can take a glance at it in my [jupyter notebook](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience/blob/main/Churn%20Prediction.ipynb)
+Besides that, I run Python Scripting in PowerQuery to conduct predictive analysis throughout three more tables named `Model Evaluation`, `Weight`, `Probability`. You can take a glance at it in my [jupyter notebook](https://github.com/calmk/PWC-Virtual-Case-Experience/blob/main/Task%203%3A%20Customer%20Retention/Churn%20Prediction.ipynb)
 
 # Data Modeling
 
