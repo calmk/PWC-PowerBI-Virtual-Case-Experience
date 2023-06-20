@@ -6,13 +6,13 @@
 
 
 ## Table of contents
-- [Problem Statement](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/6a2426abd9dfd754f8ac04a33ea35e7f4aa7e9f8/Task%202#Table-of-content)
-- [Data Sourcing](https://github.com/calmk/PWC-Virtual-Case-Experience#Data-Sourcing)
-- [Data Preparation](https://github.com/calmk/PWC-Virtual-Case-Experience#Data-Preparation)
-- [Data Modeling](https://github.com/calmk/PWC-Virtual-Case-Experience#Data-Modeling)
-- [Data Visualization](https://github.com/calmk/Call-Center-Trends-PWC-Virtual-Case-Experience#Data-Visualization)
-- [Analysis and Insights](https://github.com/calmk/Call-Center-Trends-PWC-Virtual-Case-Experience#Analysis-and-Insights)
-- [Shareable Link](https://github.com/calmk/Call-Center-Trends-PWC-Virtual-Case-Experience#Shareable-Link)
+- [Problem Statement](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/6a2426abd9dfd754f8ac04a33ea35e7f4aa7e9f8/Task%202#Problem-Statement)
+- [Data Sourcing](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Sourcing)
+- [Data Preparation](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Preparation)
+- [Data Modeling](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Modeling)
+- [Data Visualization]https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Visualization)
+- [Analysis and Insights](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Analysis-and-Insights)
+- [Shareable Link](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Shareable-Link)
 
 
 # Problem Statement
