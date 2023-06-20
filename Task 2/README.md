@@ -33,8 +33,7 @@
 
 # Data Sourcing
 
-The Dataset used for this analysis was provided by [Pwc Switzerland](https://www.pwc.ch/en/careers-with-pwc/students/virtual-case-experience.html) and available at here: [Call Center Dataset](https://github.com/calmk/Call-Center-Trends-PWC-Virtual-Case-Experience/blob/main/01%20Call-Center-Dataset.xlsx)
-
+The Dataset used for this analysis was provided by [Pwc Switzerland](https://www.pwc.ch/en/careers-with-pwc/students/virtual-case-experience.html) and available here: [Call Center Dataset](https://github.com/calmk/PWC-Virtual-Case-Experience/blob/7e4f6ca216f93fc3c8669250e8169c1eb129390f/Task%202/01%20Call-Center-Dataset.xlsx)
 # Data Preparation
 
 The dataset was loaded into Microsoft Power BI Desktop for transformation in Power Query and modeling.
@@ -206,5 +205,5 @@ You can interact and have fun with the dashboard here:
 
 [Microsoft PowerBI](https://app.powerbi.com/view?r=eyJrIjoiZmNiNWNiZGMtZTM4MS00ZDI3LTlhNTUtODMwOTZmZDExOGI5IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9) | [novyPro](https://www.novypro.com/project/baokhanhdinhtr)
 
-### Huge thanks to you for joining this creation journey with me.  Hope you all are doing great! :pray::pray::pray::relaxed:
+### Huge thanks to you for joining this creative journey with me.  Hope you all are doing great! :pray::pray::pray::relaxed:
 
