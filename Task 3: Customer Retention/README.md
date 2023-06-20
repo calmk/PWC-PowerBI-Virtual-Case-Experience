@@ -1,13 +1,13 @@
 # Customer Retention | Pwc Switzerland Power BI Virtual Case Experience
 ![background](https://user-images.githubusercontent.com/100661121/234232235-7a620f8e-e6e4-4385-8051-5fd6cfd52828.png)
 ## Table of contents
-- [Problem Statement](#Problem-Statement)
-- [Data Sourcing](#Data-Sourcing)
-- [Data Preparation](#Data-Preparation)
-- [Data Modeling](#Data-Modeling)
-- [Data Visualization](#Data-Visualization)
-- [Analysis and Insights](#Analysis-and-Insights)
-- [Shareable Link](#Shareable-Link)
+- [Problem Statement](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%203%3A%20Customer%20Retention#Problem-Statement)
+- [Data Sourcing](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%203%3A%20Customer%20Retention#Data-Sourcing)
+- [Data Preparation](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%203%3A%20Customer%20Retention#Data-Preparation)
+- [Data Modeling](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%203%3A%20Customer%20Retention#Data-Modeling)
+- [Data Visualization](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%203%3A%20Customer%20Retention#Data-Visualization)
+- [Analysis and Insights](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%203%3A%20Customer%20Retention#Analysis-and-Insights)
+- [Shareable Link](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%203%3A%20Customer%20Retention#Shareable-Link)
 
 # Problem Statement
 
