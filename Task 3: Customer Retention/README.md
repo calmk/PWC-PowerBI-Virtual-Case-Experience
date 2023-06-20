@@ -1,23 +1,23 @@
 # Customer Retention | Pwc Switzerland Power BI Virtual Case Experience
 ![background](https://user-images.githubusercontent.com/100661121/234232235-7a620f8e-e6e4-4385-8051-5fd6cfd52828.png)
 ## Table of contents
-- [Problem Statement](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience#Problem-Statement)
-- [Data Sourcing](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience#Data-Sourcing)
-- [Data Preparation](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience#Data-Preparation)
-- [Data Modeling](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience#Data-Modeling)
-- [Data Visualization](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience#Data-Visualization)
-- [Analysis and Insights](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience#Analysis-and-Insights)
-- [Shareable Link](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience#Shareable-Link)
+- [Problem Statement](#Problem-Statement)
+- [Data Sourcing](#Data-Sourcing)
+- [Data Preparation](#Data-Preparation)
+- [Data Modeling](#Data-Modeling)
+- [Data Visualization](#Data-Visualization)
+- [Analysis and Insights](#Analysis-and-Insights)
+- [Shareable Link](#Shareable-Link)
 
 # Problem Statement
 
 - **Problem:** Churning customers using PhoneNow services were got in touch after they terminated the contract, and the Customer Retention manager wants to understand their customer profile and insights with a focus on retaining customers as well as approaching in advance who is at risk.
-- **Objectives:** The purpose of this analysis is to create a Customer Retention Dashboard in Power BI for Customer Retention Manager that reflects all relevant Key Performance Indicators (KPIs) and metrics to:
+- **Objectives:** The purpose of this analysis is to create a Customer Retention Dashboard in Power BI for the Customer Retention Manager that reflects all relevant Key Performance Indicators (KPIs) and metrics to:
     - Self-exploratory the customer demographics and insights (churning & retaining).
-    - Actively approach who is at risk with risk level of specific customer
-    - Contain many metrics and plots related to a single area of business for discussing with higher manager and generating further analysis.
+    - Actively approach who is at risk with the risk level of specific customer
+    - Contain many metrics and plots related to a single area of business for discussing with higher managers and generating further analysis.
     - Allows for minimal interaction.
-    - Based on finding to recommend for improving customer retention.
+    - Based on finding recommend improving customer retention.
 
 # Data Sourcing
 
@@ -25,7 +25,7 @@ The dataset used for this analysis was provided by [Pwc Switzerland](https://www
 
 # Data Preparation
 
-The dataset was loaded into Microsoft Power BI Desktop for modeling after transformating in Power Query.
+The dataset was loaded into Microsoft Power BI Desktop for modeling after transformation in Power Query.
 
 ### Metadata
 
@@ -38,7 +38,7 @@ The tabulation below shows the metadata of `Churn` dataset:
 | Fields | 23 |
 | Entities | 7043 |
 
-The tabulation below shows the `Churn` table with its fields names and their description:
+The tabulation below shows the `Churn` table with its field's names and their description:
 
 | Field Name | Description | Data Type |
 | --- | --- | --- |
@@ -50,14 +50,14 @@ The tabulation below shows the `Churn` table with its fields names and their d
 | tenure | Describes how long as a customer | Whole number |
 | PhoneService | Describes if the customer has registered a phone service | Text |
 | MultipleLines | Describes if the customer has registered multiple lines | Text |
-| InternetService | Describes if the customer has registered for internet service | Text |
+| InternetService | Describes if the customer has registered for Internet service | Text |
 | OnlineSecurity | Describes if the customer has registered for online security | Text |
 | OnlineBackup | Describes if the customer has registered for online backup | Text |
 | DeviceProtection | Describes if the customer has registered for device protection | Text |
 | TechSupport | Describes if the customer has registered for tech support | Text |
 | StreamingTV | Describes if the customer has registered to stream tv | Text |
 | StreamingMovies | Describes if the customer has registered to stream movies | Text |
-| Contract | Describes if the length of the contract of the customer | Text |
+| Contract | Describes the length of the contract of the customer | Text |
 | PaperlessBilling | Describes if the customer has registered for paperless billing | Text |
 | PaymentMethod | Describes the payment method of the customer | Text |
 | MonthlyCharges | Represents the monthly charge incurred by the customer | Decimal number |
@@ -67,7 +67,7 @@ The tabulation below shows the `Churn` table with its fields names and their d
 | Churn | Describes if the customer is at risk of churn | Text |
 - **Relevant information about the** `Churn` **dataset:**
     - Customers who left within the last month
-    - Services each customer has signed up for: phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
+    - Services each customer has signed up for phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
     - Customer account information: how long as a customer, contract, payment method, paperless billing, monthly charges, total charges and number of tickets opened in the categories administrative and technical
     - Demographic info about customers – gender, age range, and if they have partners and dependents
 
@@ -75,18 +75,18 @@ The tabulation below shows the `Churn` table with its fields names and their d
 
 Data Cleaning for the dataset was done in Power Query as follows:
 
-- Each of the columns in the table were validated to have the correct data type
-- There are 11 `N/A` values in `TotalCharges` column. Those missing values was filled with the `MonthlyCharges` value of each row because those customers are new and their tenure are just 1. `Table.AddColumn(#"Changed Type", "Custom", each if [TotalCharges] = null then [MonthlyCharges] else [TotalCharges])`
+- Each of the columns in the table was validated to have the correct data type
+- There are 11 `N/A` values in `TotalCharges` column. Those missing values were filled with the `MonthlyCharges` value of each row because those customers are new and their tenure is just 1. `Table.AddColumn(#"Changed Type", "Custom", each if [TotalCharges] = null then [MonthlyCharges] else [TotalCharges])`
 
 ### Data Transformation
-A new table named `Churn unpivot` was created by duplicating the `Churn dataset` table and unpivoting some columns to support for a clearly overview look. In the new table, I conducted transformation using M-formula, you can refer at below:
+A new table named `Churn unpivot` was created by duplicating the `Churn dataset` table and unpivoting some columns to support a clear overview look. In the new table, I conducted transformation using M-formula, you can refer at below:
 
 - Attribute of demographic info: `Table.Unpivot(#"Replaced Value1", {"SeniorCitizen", "Partner", "Dependents"}, "Attribute", "Value")`
 - Attribute of services:
     - `Table.ReplaceValue(#"Renamed Columns","No internet service","No",Replacer.ReplaceText,{"OnlineSecurity", "OnlineBackup", "DeviceProtection", "TechSupport", "StreamingTV", "StreamingMovies"})`
     - `Table.Unpivot(#"Reordered Columns", {"PhoneService", "MultipleLines", "Internet", "OnlineSecurity", "OnlineBackup", "DeviceProtection", "TechSupport", "StreamingTV", "StreamingMovies"}, "Attribute", "Value.1")`
 
-Besides that, I run Python Scripting in PowerQuery to conduct predictive analysis throughout three more tables name `Model Evaluation`, `Weight`, `Probability`. You can take a glance at it in my [jupyter notebook](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience/blob/main/Churn%20Prediction.ipynb)
+Besides that, I run Python Scripting in PowerQuery to conduct predictive analysis throughout three more tables named `Model Evaluation`, `Weight`, `Probability`. You can take a glance at it in my [jupyter notebook](https://github.com/calmk/Customer-Retention-PWC-Virtual-Case-Experience/blob/main/Churn%20Prediction.ipynb)
 
 # Data Modeling
 
@@ -114,13 +114,13 @@ Data visualization for the datasets was done in Microsoft Power BI Desktop, the 
 
 ## Dashboard type
 
-Dashboard by level of detail: **Tactical dashboard**
+Dashboard by the level of detail: **Tactical dashboard**
 
 Dashboard by use-case: **Exploratory**
 
 Target audience: **Customer** **Retention Manager**
 
-## Key Performance Indicators and metrics:
+## Key Performance Indicators and Metrics:
 **About Customer Profile:**
 
 - Number of retained and churned customers
@@ -134,7 +134,7 @@ Target audience: **Customer** **Retention Manager**
 - Churn by each service
 - Churn by tenure
 - Churn by Contract type
-- Total Admin & Tech ticket of churn customers
+- Total Admin & Tech tickets of churn customers
 
 **About Churn Predictive Model Comparison:**
 
@@ -144,7 +144,7 @@ Target audience: **Customer** **Retention Manager**
 
 ### Measures
 
-Measure used in visualization are:
+The measure used in visualization are:
 
 - **Calculated measures**
     - Rate of customer = `IF(ISFILTERED('Churn dataset'[Churn]),DIVIDE(CALCULATE(COUNT('Churn dataset'[Churn]), 'Churn dataset'[Churn] = SELECTEDVALUE('Churn dataset'[Churn])),CALCULATE(COUNT('Churn dataset'[customerID]),ALL('Churn dataset'[Churn])),0),DIVIDE(COUNT('Churn dataset'[customerID]),CALCULATE(COUNT('Churn dataset'[customerID]),ALL('Churn dataset'))))`
@@ -189,7 +189,7 @@ Measure used in visualization are:
 **Color:** Datacamp palette
 
 # Analysis and Insights
-The purpose of this dashboard is served as self-exploratory for managers, but I still note some highlighted point that I recognize below:
+The purpose of this dashboard is to serve as self-exploratory for managers, but I still note some highlighted points that I recognize below:
 
 - Month-to-Month contracts, lack of online security and tech support, and issues with Fiber Optic service are some of the reasons for customer churn.
 - Only 16% of the customers are senior citizens, with almost double the churn rate compared to younger customers.
@@ -202,4 +202,4 @@ You can interact and have fun with the dashboard here:
 
 [Microsoft PowerBI](https://app.powerbi.com/view?r=eyJrIjoiMzkyNDM4N2UtYWU3Yy00ZjM0LTk4YWYtYzY1M2EwY2I4Y2Q2IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9&embedImagePlaceholder=true&pageName=ReportSectione13631e7a8cb93d38b57)  | [novyPro](https://www.novypro.com/project/customer-retention-|-pwc-switzerland-power-bi-virtual-case-experience)
 
-### Huge thanks to you for joining this creation journey with me.  Hope you all are doing great! :pray::pray::pray::relaxed:
+### Huge thanks to you for joining this creative journey with me.  Hope you all are doing great! :pray::pray::pray::relaxed:
