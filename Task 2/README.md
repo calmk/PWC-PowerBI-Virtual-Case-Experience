@@ -10,7 +10,7 @@
 - [Data Sourcing](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Sourcing)
 - [Data Preparation](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Preparation)
 - [Data Modeling](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Modeling)
-- [Data Visualization]https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Visualization)
+- [Data Visualization](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Data-Visualization)
 - [Analysis and Insights](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Analysis-and-Insights)
 - [Shareable Link](https://github.com/calmk/PWC-Virtual-Case-Experience/tree/main/Task%202#Shareable-Link)
 
