@@ -26,5 +26,5 @@ This virtual experience program consists of 3 tasks:
   
 
 **Predictive analysis**:
-- Language: Python 3.8
+- Language: Python 3.11
 - Package: Pandas, Numpy, scikit-learn, XGBoost
