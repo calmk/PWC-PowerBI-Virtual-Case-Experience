@@ -27,4 +27,4 @@ This virtual experience program consists of 3 tasks:
 
 **Predictive analysis**:
 - Language: Python 3.8
-- Package: Pandas, Numpy, sklearn, XGBoost
+- Package: Pandas, Numpy, scikit-learn, XGBoost
