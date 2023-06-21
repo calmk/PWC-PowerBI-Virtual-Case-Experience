@@ -20,11 +20,11 @@ This virtual experience program consists of 3 tasks:
 
 ## Technical Stack
 
-Visualization:
+**Visualization**:
 - PowerBI
 - PowerPoint *(design layout)*
 
-Predictive analysis:
+**Predictive analysis**:
 - Pandas
 - Numpy
 - sklearn
