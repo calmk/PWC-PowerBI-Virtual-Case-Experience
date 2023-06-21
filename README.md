@@ -19,10 +19,12 @@ This virtual experience program consists of 3 tasks:
 - **Task 3**: Create Diversity and Inclusion in HR - visualizing gender balance in the executive suite.
 
 ## Technical Stack
+
 Visualization:
 - PowerBI
 - PowerPoint *(design layout)*
-Prediction model:
+
+Predictive analysis:
 - Pandas
 - Numpy
 - sklearn
