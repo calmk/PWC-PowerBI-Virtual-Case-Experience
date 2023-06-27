@@ -8,6 +8,9 @@ This repository displays the process and outcomes of the tasks completed during 
 
 All of these .pbix files and insights were my submissions for this program, except for the data files which were assigned by PwC Switzerland.
 
+![image](https://github.com/calmk/PWC-PowerBI-Virtual-Case-Experience/assets/100661121/37a0a7af-8116-429e-9a92-34a126f4d6a4)
+
+
 ## :clipboard: Introduction
 At PwC, we work with global organizations, upskilling our 276,000 employees. Our goal is to provide everyone with the opportunity to learn, work, and participate in the digital world.
 Our employees have the chance to become "Digital Accelerators" by rapidly deepening their skills in digital specialties such as data, automation, AI, and digital storytelling. They do this by learning self-service tools and coding languages and applying these skills across our business.
