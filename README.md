@@ -24,8 +24,8 @@ This virtual experience program consists of 3 tasks:
 ## :gear: Technical Stack
 
 **Visualization**:
-- PowerBI
-- PowerPoint *(design layout)*
+- Microsoft PowerBI
+- Microsoft PowerPoint *(design layout)*
   
 
 **Predictive analysis**:
